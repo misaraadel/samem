@@ -18,8 +18,8 @@ $(document).ready(function () {
             scrollTop: 0
         }, 100);
     });
-     //Wow intit
-     wow = new WOW({
+    //Wow intit
+    wow = new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
         offset: 200,
