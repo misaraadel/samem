@@ -46,4 +46,7 @@
     .projects img{
         height: 200px !important;
     }
+    .nav-toggler{
+        display: flex !important;
+    }
 }

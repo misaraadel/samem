@@ -69,10 +69,14 @@ ul{
     transition: all .5s linear;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #FFD371;
     opacity: 1;
 }
 .overflowNone{
     overflow: hidden;
+}
+.owl-stage-outer{
+    padding: 20px 0px;
 }
 .scroll-top-btn{
     width: 40px;
