@@ -35,6 +35,7 @@ $(document).ready(function () {
     });
     //owl header screen 
     $('.owl-header').owlCarousel({
+        rtl: true,
         loop:true,
         margin: 20,
         nav:false,
