@@ -885,7 +885,54 @@ header{
             object-position: center;
         }
     }
-   
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start !important;
+        align-items: center;
+        align-content: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        border: none;
+        flex-wrap: nowrap;
+        padding-bottom: 20px !important;
+        &::-webkit-scrollbar {
+            width: 3px !important;
+            height: 3px !important;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #ccc;
+            width: 3px !important;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #02AE84; 
+            border-radius: 8px;
+            width: 3px !important;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #FFD371; 
+            width: 3px !important;
+        }
+        .nav-item{
+            margin: 0px 10px;
+            .nav-link{
+                padding: 15px 20px !important;
+                border: 1px solid #02C584 !important;
+                color: #02C584 !important;
+                font-size: 20px !important;
+                font-weight: 700 !important;
+                width: fit-content !important;
+                min-width: 200px !important;
+                text-align: center;
+                border-radius: 10px !important;
+                &.active{
+                    background-color: #02C584 !important;
+                    border-radius: 10px !important;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
 }
 footer{
     width: 100%;
