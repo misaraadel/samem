@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--start the meta tags-->
+    <!--meta tag for utf-8 code for ar and en-->
+    <meta charset="utf-8">
+    <!--meta tag for description of website-->
+    <meta name="description" content="....">
+    <!--meta tag for the author of website-->
+    <meta name="author" content="misara adel">
+    <!--meta tag for make website compatible with all screen devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#FF7F7F">
+    <!--end the meta tags-->
+    <!--title tag for website appear in tab-->
+    <title>برنامج صميم</title>
+    <!-- the style link for image icon-->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon"/>
+    <!--start the intialize of css library files-->
+    <!--the intilize of fontawsome lib-->
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+    <!--the intilize of animate lib used with wow js lib-->
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+    <!--the intilize of bootstrap en version lib-->
+    <!-- <link rel="stylesheet" href="assets/css/lib/bootstrap.css"> -->
+    <!--the intilize of bootstrap ar version lib-->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css">
+    <!--the intilize of owl carousel lib-->
+    <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
+    <!--the intilize of dots that appear with owl carousel -->
+    <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/lib/jquery.fancybox.css" />
+    <!--end the intialize of css library files-->
+    <!--start the intilalize of css files -->
+    <!--the stylesheet en file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--the media file screen -->
+    <link rel="stylesheet" href="assets/css/media.css">
+    <!--end the intilalize of css files-->
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="content">
+                <div class="nav-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="#" class="brand-name">
+                    <img src="assets/images/logo.png" alt="" />
+                </a>
+                <div class="nav-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">الباقات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">المدونة</a>
+                        </li>
+                    </ul>
+                    <div class="buttons-content">
+                        <button type="button"  data-toggle="modal" data-target="#exampleModal" class="custom-btn green-btn">
+                            طلب تجربة
+                        </button>
+                        
+                        <a href="#" class="custom-btn move-btn">
+                            تسجيل دخول
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"> طلب تجربة </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-content">
+                    <div class="form-group">
+                        <label> اسم الشركة </label>
+                        <input type="text" class="form-control" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label> رقم الجوال </label>
+                        <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label> الايميل</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label> ملاحظات </label>
+                        <textarea class="form-control"> </textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer buttons-content">
+              <button type="button" class="custom-btn move-btn" data-dismiss="modal">اغلاق</button>
+              <button type="button" class="custom-btn move-btn"> ارسال </button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <main>
+      <!--start header-->
+      <header>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 col-12 mb-4">
+                      <div class="content">
+                          <h4>ابدا الان</h4>
+                          <img src="assets/images/samem.svg" alt="" />
+                      </div>
+                  </div>
+                  <div class="col-lg-8 col-md-6 col-12 mb-4">
+                      <div class="image-content">
+                          <img src="assets/images/header.svg" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+      <section class="traingin-form">
+        <div class="container">
+          <div class="heading">
+            <h1>
+              طلب تدريب 
+            </h1>
+          </div>
+          
+          <form class="form-contain">
+            <div class="row">
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    تدريب تمهير     
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    تدريب تطبيقي    
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    تدريب تعاوني   
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    أخرى 
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-12 mt-1">
+                <div class="small-heading">
+                  <h2>
+                    المعلومات الشخصية
+                  </h2>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/user.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="الاسم الاول" />
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/user.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="الاسم الثاني" />
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/user.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="اسم العائلة" />
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/date.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="تاريخ الميلاد" />
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/date.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="تاريخ التخرج" />
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/menu.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="التخصص" />
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/type.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="الجنسية" />
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/map.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="مقيم في " />
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/map.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="في مدينة" />
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/map.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="الحي " />
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="small-heading">
+                  <h2>
+                    الجنس
+                  </h2>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    ذكر 
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    أنثى 
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-12 mt-1">
+                <div class="small-heading">
+                  <h2>
+                    الحالة الاجتماعية
+                  </h2>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    أعزب 
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    متزوج 
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    مطلق 
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-12 mt-3">
+                <div class="form-group text-area">
+                  <img
+                    src="assets/images/form/pen.svg"
+                    loading="lazy"
+                    alt="" />
+
+                  <textarea class="form-control" placeholder=" ...  اكتب نبذة عن نفسك" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+
+              <div class="col-12 mt-1">
+                <div class="small-heading">
+                  <h2>
+                    برنامج التدريب المتقدم عليه
+                  </h2>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-12">
+                <div class="form-group select-options">
+                  <img
+                    src="assets/images/form/menu.svg"
+                    loading="lazy"
+                    alt="" />
+
+                  <select name="" class="form-control" id="">
+                    <option value="">
+                      برنامج التدريب المتقدم عليه
+                    </option>
+
+                    <option value="">
+                      التسويق والمبيعات  
+                    </option>
+
+                    <option value="">
+                      العلاقات العامة 
+                    </option>
+
+                    <option value="">
+                      التخطيط والتطوير 
+                    </option>
+
+                    <option value="">
+                      البرمجة والتطبيقات
+                    </option>
+
+                    <option value="">
+                      التصميم  الإبداعي 
+                    </option>
+
+                    <option value="">
+                      الموشن جرافيك 
+                    </option>
+
+                    <option value="">
+                      صناعة المحتوى 
+                    </option>
+
+                    <option value="">
+                      الإنتاج الفني 
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-12 mt-1">
+                <div class="small-heading">
+                  <h2>
+                    نوع التدريب 
+                  </h2>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    حضوري 
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    جزئي 
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    عن بعد 
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6 mb-2">
+                <div class="wrapper">
+                  <input type="radio" class="radio-check" id="radioCheck"/>
+
+                  <label class="radio-title" for="radioCheck">
+                    مشروع  
+                  </label>
+                </div>
+              </div>
+              
+
+              <div class="col-lg-4 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/map.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="الجهة المُكلفة بالتدريب " />
+                </div>
+              </div>
+
+              <div class="col-12 mt-1">
+                <div class="small-heading">
+                  <h2>
+                    معلومات التواصل
+                  </h2>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/sms.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="البريد الالكتروني" />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <img
+                    src="assets/images/form/phone.svg"
+                    loading="lazy"
+                    alt="" />
+                  
+                  <input type="text" class="form-control" placeholder="رقم الهاتف" />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="file-upload">
+                  <input type="file" name="uploadFile" id="uploadFile"/>
+
+                  <label for="uploadFile" class="file-upload-section">
+                    <img src="assets/images/form/document_upload.svg" alt="">
+
+                    <h2>
+                      إرفاق السيرة الذاتية مع الصورة الشخصية
+                    </h2>
+
+                    <p>
+                      Max Size : 5MB
+                    </p>
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-button">
+                  <button class="custom-btn">
+                    <img src="assets/images/form/arrow.svg" loading="lazy" alt="" />
+      
+                    <span>
+                      ارسال الطلب 
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="container">
+          <div class="content">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12 m-auto">
+                      <ul>
+                          <li>
+                              <a href="#">اتفاقية الاستخدام</a>
+                          </li>
+                          <li>
+                              <a href="#">سياسة الخصوصية</a>
+                          </li>
+                          <li>
+                              <a href="#">انضم الينا</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-12 m-auto">
+                      <p class="copyrights">
+                          جميع الحقوق محفوظه @ 2021
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <!--loading page-->
+    <div class="loader">
+        <div class="container">
+              <div class="loading-content">
+                  <div class="drop-water light-blue"></div>
+                  <div class="drop-water light-blue"></div>
+                  <div class="box">
+                      <div class="wave light-blue">
+      
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!--Scroll to top button-->
+    <a data-scroll href="#" class="scroll-top-btn" id="scroll-btn">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <!--start the intialize of js lib-->
+    <!--first intilize jquery lib-->
+    <script src="assets/js/lib/jquery4.js"></script>
+    <!--second intialize popper js lib-->
+    <script src="assets/js/lib/popper.js"></script>
+    <!--third intialize bootstrap js lib-->
+    <script src="assets/js/lib/bootstrap.js"></script>
+    <!--intialize owl coursel js lib -->
+    <script src="assets/js/lib/owl.carousel.min.js"></script>
+    <!--intialize wow js lib-->
+    <script src="assets/js/lib/wow.min.js"></script>
+    <script src="assets/js/lib/jquery.fancybox.js"></script>
+    <!--end the intialize of js lib-->
+    <!--intialize main js file-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
