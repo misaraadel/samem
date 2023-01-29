@@ -49,4 +49,8 @@
     .nav-toggler{
         display: flex !important;
     }
+
+    .signle-blog .data-contain {
+        padding: 20px 15px;
+    }
 }

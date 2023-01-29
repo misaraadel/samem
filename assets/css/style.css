@@ -1610,274 +1610,235 @@ footer .content .copyrights {
   margin-top: 100px;
 }
 
-.traingin-form {
+.blogs {
   width: 100%;
-  padding: 50px 0px 70px 0px;
+  padding: 80px 0px;
+  background-color: #fff;
   position: relative;
+  z-index: 9;
 }
-.traingin-form .heading {
+.blogs .blog-box {
   width: 100%;
-  text-align: center;
-  margin-bottom: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: all 0.3s linear;
 }
-.traingin-form .heading h1 {
-  font-size: 50px;
-  font-weight: 900;
-  color: #606BD5;
-}
-.traingin-form .small-heading {
+.blogs .blog-box .image-content {
   width: 100%;
-  margin-bottom: 20px;
+  height: 250px;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+  border-radius: 20px;
 }
-.traingin-form .small-heading h2 {
-  color: #606BD5;
-  font-size: 18px;
-  font-weight: 900;
+.blogs .blog-box .image-content .date, .blogs .blog-box .image-content .type {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 20px;
+  z-index: 9;
+  padding: 3px 10px !important;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
   margin: 0px;
 }
-.traingin-form .form-contain .form-group {
-  width: 100%;
-  height: 47px;
-  position: relative;
-  margin-bottom: 18px;
-  z-index: 9;
+.blogs .blog-box .image-content .date {
+  background-color: var(--primary);
+  left: 10px !important;
 }
-.traingin-form .form-contain .form-group.select-options::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background: url("../images/form/down_arrow.svg") center/contain no-repeat;
-  top: calc(50% - 12px);
-  left: 15px;
-  z-index: 9;
-  pointer-events: none;
-  transition: all 0.3s linear;
+.blogs .blog-box .image-content .type {
+  right: 10px;
+  background-color: var(--secondary);
 }
-.traingin-form .form-contain .form-group.select-options .form-control {
-  color: var(--gray-color) !important;
-}
-.traingin-form .form-contain .form-group.text-area {
-  height: 100px;
-}
-.traingin-form .form-contain .form-group.text-area img {
-  top: 14px !important;
-}
-.traingin-form .form-contain .form-group.text-area .form-control {
-  padding-top: 17px;
-  border-radius: 20px !important;
-}
-.traingin-form .form-contain .form-group img {
-  width: 24px;
-  height: 24px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  position: absolute;
-  top: calc(50% - 12px);
-  right: 15px;
-  transition: all 0.3s linear;
-}
-.traingin-form .form-contain .form-group .form-control {
+.blogs .blog-box .image-content img {
   width: 100%;
   height: 100%;
-  -webkit-padding-start: 49px;
-          padding-inline-start: 49px;
-  border-radius: 60px;
-  border: 1px solid rgba(96, 107, 213, 0.06);
-  color: var(--dark-color);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs .blog-box .contain {
+  width: 100%;
+  padding: 15px 10px;
+  text-align: center;
+}
+.blogs .blog-box .contain h1 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #000;
+  margin: 0px;
+}
+.blogs .blog-box .contain p {
+  color: #808080;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+.blogs .blog-box .contain .button-contain {
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+.blogs .blog-box .contain .button-contain .button-shape {
+  margin: 0px auto;
+}
+.blogs .blog-box:hover {
+  transform: translateY(-10px);
+}
+.blogs .blog-box:hover h1 {
+  color: var(--primary);
+}
+
+.signle-blog {
+  width: 100%;
+  position: relative;
+  padding-bottom: 80px;
+}
+.signle-blog .image-content {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 99;
+  margin-top: -80px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.signle-blog .image-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.signle-blog .title-contain {
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #6173C7;
+  text-align: center;
+  border-radius: 40px;
+  margin: 50px 0px 80px;
+}
+.signle-blog .title-contain h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.signle-blog .title-contain .data {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.signle-blog .title-contain .data img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  filter: invert(100%) sepia(3%) saturate(7500%) hue-rotate(153deg) brightness(107%) contrast(102%);
+}
+.signle-blog .title-contain .data span {
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  resize: none;
 }
-.traingin-form .form-contain .form-group .form-control::-moz-placeholder {
-  color: var(--gray-color);
-  font-size: 16px;
-  font-weight: 500;
-}
-.traingin-form .form-contain .form-group .form-control:-ms-input-placeholder {
-  color: var(--gray-color);
-  font-size: 16px;
-  font-weight: 500;
-}
-.traingin-form .form-contain .form-group .form-control::placeholder {
-  color: var(--gray-color);
-  font-size: 16px;
-  font-weight: 500;
-}
-.traingin-form .form-contain .form-group .form-control:hover, .traingin-form .form-contain .form-group .form-control:focus {
-  border-color: rgba(96, 107, 213, 0.5);
-}
-.traingin-form .form-contain .form-group:hover img {
-  -webkit-animation: tada 0.3s linear both;
-          animation: tada 0.3s linear both;
-}
-.traingin-form .form-contain .form-group:hover::before {
-  transform: rotate(180deg);
-}
-.traingin-form .form-contain .form-button {
+.signle-blog .title-contain .tags {
   width: 100%;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-top: 8px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
-.traingin-form .form-contain .form-button .custom-btn {
-  width: 200px;
-  height: 50px;
-  position: relative;
-  border-radius: 25px;
-  background-color: #606BD5;
+.signle-blog .title-contain .tags li {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  margin-bottom: 10px;
+}
+.signle-blog .title-contain .tags li:last-child {
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.signle-blog .title-contain .tags li a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: var(--secondary);
+  font-size: 15px;
+  font-weight: 500;
+}
+.signle-blog .data-contain {
+  width: 100%;
+  padding: 80px;
+  border: 1px solid rgba(97, 115, 199, 0.1);
+  border-radius: 50px;
+}
+.signle-blog .data-contain p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+}
+.signle-blog .data-contain p:last-child {
+  margin-bottom: 0px !important;
+}
+.signle-blog .share-section {
+  width: 100%;
+  padding: 30px 10px;
+  background-color: #fff;
+  border: 1px solid var(--secondary);
+  box-shadow: 0px 0px 10px rgba(97, 115, 199, 0.06);
+  border-radius: 20px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
-  transition: all 0.3s linear;
-  overflow: hidden;
-  z-index: 9;
-  border: 0px;
-  outline: none;
 }
-.traingin-form .form-contain .form-button .custom-btn img {
-  width: 24px !important;
-  height: 24px !important;
-  display: inline !important;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-margin-end: 8px;
-          margin-inline-end: 8px;
-  transition: all 0.3s linear;
-}
-.traingin-form .form-contain .form-button .custom-btn span {
-  font-size: 16px;
+.signle-blog .share-section p {
+  color: #6173C7;
+  font-size: 20px;
   font-weight: 700;
-  color: #fff;
-  transition: all 0.3s linear;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  margin-bottom: 0px !important;
 }
-.traingin-form .form-contain .form-button .custom-btn:hover {
-  -webkit-animation: translateX 0.3s linear;
-          animation: translateX 0.3s linear;
-}
-.traingin-form .form-contain .wrapper {
+.signle-blog .share-section .socail-media {
   display: flex;
   align-items: center;
   align-content: center;
-  cursor: pointer;
 }
-.traingin-form .form-contain .wrapper .radio-title {
-  margin: 0px !important;
-  width: calc(100% - 25px);
-}
-.traingin-form .form-contain .wrapper .radio-check {
-  -moz-appearance: none;
-       appearance: none;
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid #606BD5;
-  background-color: #fff;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
+.signle-blog .share-section .socail-media li {
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
 }
-.traingin-form .form-contain .wrapper .radio-check.squre-check {
-  border-radius: 4px !important;
+.signle-blog .share-section .socail-media a {
+  width: 24px;
+  height: 24px;
+  display: flex;
 }
-.traingin-form .form-contain .wrapper .radio-check.squre-check::after {
-  border-radius: 4px !important;
-}
-.traingin-form .form-contain .wrapper .radio-check::after {
-  content: "\f00c";
+.signle-blog .share-section .socail-media a img {
   width: 100%;
   height: 100%;
-  background-color: #606BD5;
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 12px;
-  transform: scale(0);
-  transition: all 0.4s linear;
-  top: 0;
-  left: 0;
-}
-.traingin-form .form-contain .wrapper .radio-check:checked {
-  border: 0px !important;
-}
-.traingin-form .form-contain .wrapper .radio-check:checked::after {
-  transform: scale(1);
-}
-.traingin-form .form-contain .wrapper .radio-title {
-  color: #000;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-}
-.traingin-form .form-contain .wrapper:hover .radio-title {
-  color: #6173C7;
-}
-.traingin-form .file-upload {
-  width: 224px;
-  height: 150px;
-  position: relative;
-}
-.traingin-form .file-upload input[type=file] {
-  display: none;
-}
-.traingin-form .file-upload .file-upload-section {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  background: rgba(213, 185, 139, 0.1);
-  border: 1px solid rgba(0, 93, 99, 0.1);
-  border-radius: 24px;
-  cursor: pointer;
-}
-.traingin-form .file-upload .file-upload-section img {
-  width: 40px;
-  height: 40px;
   -o-object-fit: contain;
      object-fit: contain;
-  transition: all 0.3s linear;
-  position: relative;
-  top: unset !important;
-  left: unset !important;
-  transform: translate(0px, 0px);
 }
-.traingin-form .file-upload .file-upload-section h2 {
-  color: #909090;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 15px 0px;
+.signle-blog .share-section .socail-media a:hover::after {
+  opacity: 1;
 }
-.traingin-form .file-upload .file-upload-section p {
-  color: #606BD5;
-  font-size: 11px;
-  font-weight: 500;
-  margin: 0px;
-}
-.traingin-form .file-upload .file-upload-section:hover img {
-  transform: translateY(-10px);
+.signle-blog .share-section .socail-media a:hover img {
+  -webkit-animation: tada 0.4s linear both;
+          animation: tada 0.4s linear both;
 }/*# sourceMappingURL=style.css.map */
